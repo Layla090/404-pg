@@ -9,3 +9,56 @@ body {
     font-size: 40px;
     margin-top: 250px;
 }
+
+#song{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 170px;
+}
+
+#song-container {
+  width: min(900px, 92vw);
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+#song {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers button + text */
+  gap: 10px;
+}
+
+#playBtn {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+#waveform {
+  flex: 1;
+  height: 100px;
+  min-width: 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 130px;
+  width: 175px;
+}
+
+#song {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}

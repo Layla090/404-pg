@@ -19,3 +19,10 @@ function isColliding(el1, el2) {
         document.getElementById("after").style.display = "block";
         currentScreen = 1;
     }
+
+    var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: '#ff00e6',
+        progressColor: '#2900f4',
+    });
+    wavesurfer.load('media/chess.png');

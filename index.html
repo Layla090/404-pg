@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my bad guys....errr</title>
     <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/wavesurfer.js@7"></script>
     <script src="index.js"></script>
     </head>
 
@@ -23,11 +24,39 @@
 
         <!--sara-->
         <div id="body">
-            <img src="Hapoy.png">
+            <img src="Hapoy.png" id="picyay">
         </div>
         
         <!--cursor-->
         <div id="arm"></div>
 
-    </body>
-</html>
+        <!--sound-->
+    <div id="song-container">
+        <div id="song">
+            <h1>Song: Chess</h1>
+        </div>
+        <img src="Play.png" id="playBtn">
+        <div id="waveform"></div>
+        </div>
+
+    <script>
+        var playBtn = document.getElementById("playBtn");
+
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'pink',
+            progressColor: 'red',
+            height: 100,
+            barWidth: 4,
+            responsive: true,
+            barRadius: 1.67,
+        });
+            
+    wavesurfer.load('chess.mp3');
+
+    playBtn.onclick = function(){
+        wavesurfer.playPause();
+    }
+        
+    </script>
+</body>
