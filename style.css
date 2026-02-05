@@ -1,6 +1,9 @@
 body {
     background-color: hotpink;
     cursor: url('Arm.png') 16 16, auto;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
 }
 
 #words {
@@ -8,6 +11,22 @@ body {
     font-family: Copperplate, Papyrus, fantasy;
     font-size: 40px;
     margin-top: 250px;
+}
+
+#picyay {
+  size-adjust: 400vh;
+  display: block;
+  margin: 0 auto;
+  height: 700px;
+  width: 950px;
+}
+
+#ack {
+  size-adjust: 400vh;
+  display: block;
+  margin: 0 auto;
+  height: 700px;
+  width: 950px;
 }
 
 #song{
@@ -35,6 +54,8 @@ body {
   flex-direction: column;
   align-items: center; /* centers button + text */
   gap: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 #playBtn {
@@ -44,17 +65,22 @@ body {
   display: block;
 }
 
+#img1 {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  width: 800px;
+  height: 500px;
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+  overflow: hidden;
+}
+
 #waveform {
   flex: 1;
   height: 100px;
   min-width: 0;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  height: 130px;
-  width: 175px;
 }
 
 #song {
